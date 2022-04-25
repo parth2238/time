@@ -90,7 +90,7 @@
     let date;
     let time;
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    setInterval(() => {
+    clr = setInterval(() => {
         a = new Date();
         let date = a.toLocaleDateString(undefined,options);
         let time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
